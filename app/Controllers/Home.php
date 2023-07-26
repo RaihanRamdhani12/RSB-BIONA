@@ -34,11 +34,11 @@ class Home extends BaseController
                 ]);
             } else {
                 session()->setFlashdata('error', 'Username/Password Salah');
-                return redirect()->to(base_url('login'));
+                return redirect()->to(base_url('halaman'));
             }
         } else {
             session()->setFlashdata('error', 'Username/Password Salah');
-            return redirect()->to(base_url('login'));
+            return redirect()->to(base_url('halaman'));
         }
     }
     
